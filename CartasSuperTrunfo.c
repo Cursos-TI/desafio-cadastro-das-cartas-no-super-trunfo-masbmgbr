@@ -68,22 +68,22 @@ int main() {
     scanf("%d", &Carta2Pturisticos);
 
     // Exibição dos Dados das Cartas:
-    printf("Dados da Carta 1:\n");
+    printf("\n\nDados da Carta 1:\n");
     printf("Estado: %c\n", Carta1Estado);
     printf("Codigo: %s\n",Carta1Codigo);
     printf("Cidade: %s\n",Carta1NomeCidade);
     printf("População: %d\n",Carta1Populacao);
-    printf("Área: %f\n", Carta1Area);
-    printf("PIP: %f\n",Carta1PIB);
+    printf("Área: %.2f\n", Carta1Area);
+    printf("PIP: %.2f\n",Carta1PIB);
     printf("Quantidade de Pontos Turísticos: %d\n",Carta1Pturisticos);
 
-    printf("Dados da Carta 2:\n");
+    printf("\n\nDados da Carta 2:\n");
     printf("Estado: %c\n", Carta2Estado);
     printf("Codigo: %s\n",Carta2Codigo);
     printf("Cidade: %s\n",Carta2NomeCidade);
     printf("População: %d\n",Carta2Populacao);
-    printf("Área: %f\n", Carta2Area);
-    printf("PIP: %f\n",Carta2PIB);
+    printf("Área: %.2f\n", Carta2Area);
+    printf("PIP: %.2f\n",Carta2PIB);
     printf("Quantidade de Pontos Turísticos: %d\n",Carta2Pturisticos);
     return 0;
 }
