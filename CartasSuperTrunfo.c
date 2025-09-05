@@ -8,17 +8,17 @@
 
 int main() {
     // Definicao das variaveis
-    char carta1Estado;
+    char Carta1Estado;
     char Carta1Codigo[3];
-    char Carta1NomeCidade[];
+    char Carta1NomeCidade[50];
     int Carta1Populacao;
     float Carta1Area;
     float Carta1PIB;
     int Carta1Pturisticos;
 
-    char carta2Estado;
+    char Carta2Estado;
     char Carta2Codigo[3];
-    char Carta2NomeCidade[];    
+    char Carta2NomeCidade[50];    
     int Carta2Populacao;
     float Carta2Area;
     float Carta2PIB;
