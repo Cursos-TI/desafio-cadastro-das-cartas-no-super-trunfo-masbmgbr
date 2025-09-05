@@ -7,10 +7,46 @@
 //Teste larissa
 
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
+    // Definicao das variaveis
+    char carta1Estado;
+    char Carta1Codigo[3];
+    char Carta1NomeCidade[];
+    int Carta1Populacao;
+    float Carta1Area;
+    float Carta1PIB;
+    int Carta1Pturisticos;
+
+    char carta2Estado;
+    char Carta2Codigo[3];
+    char Carta2NomeCidade[];    
+    int Carta2Populacao;
+    float Carta2Area;
+    float Carta2PIB;
+    int Carta2Pturisticos;
+     
+    // Cadastro das Cartas
+    printf("Super Trunfo\n\n");
+    printf("Entre os dados para Carta 1:\n");
+    printf("Estado: ");
+    scanf("%s", &Carta1Estado);
+    printf("Codigo: (A99) ");
+    scanf("%s", &Carta1Codigo);
+
+    printf("Cidade: ");
+    fgets(Carta1NomeCidade, 50, stdin); // Lê no máximo 49 caracteres da entrada padrão (stdin)
+    Carta1NomeCidade[strcspn(Carta1NomeCidade, "\n")] = 0; //  remove '\n' na string
     
-    // Cadastro das Cartas:
+    printf("População: ");
+    scanf("%d", &Carta1Populacao);
+    printf("Área: ");
+    scanf("%f", &Carta1Area);
+    printf("PIP: ");
+    scanf("%f", &Carta1PIB);
+    printf("Quantidade de Pontos Turísticos: ");
+    scanf("%d", &Carta1Pturisticos);
+
+
+
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
     
