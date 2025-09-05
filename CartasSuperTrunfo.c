@@ -26,9 +26,11 @@ int main() {
      
     // Cadastro das Cartas
     printf("Super Trunfo\n\n");
+
+    // Carta 1
     printf("Entre os dados para Carta 1:\n");
     printf("Estado: ");
-    scanf("%s", &Carta1Estado);
+    scanf("%c", &Carta1Estado);
     printf("Codigo: (A99) ");
     scanf("%s", &Carta1Codigo);
 
@@ -45,14 +47,43 @@ int main() {
     printf("Quantidade de Pontos Turísticos: ");
     scanf("%d", &Carta1Pturisticos);
 
+    // Carta 2
+    printf("\nEntre os dados para Carta 2:\n");
+    printf("Estado: ");
+    scanf("%s", &Carta2Estado);
+    printf("Codigo: (A99) ");
+    scanf("%s", &Carta2Codigo);
 
-
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
+    printf("Cidade: ");
+    fgets(Carta2NomeCidade, 50, stdin); // Lê no máximo 49 caracteres da entrada padrão (stdin)
+    Carta2NomeCidade[strcspn(Carta2NomeCidade, "\n")] = 0; //  remove '\n' na string
     
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    printf("População: ");
+    scanf("%d", &Carta2Populacao);
+    printf("Área: ");
+    scanf("%f", &Carta2Area);
+    printf("PIP: ");
+    scanf("%f", &Carta2PIB);
+    printf("Quantidade de Pontos Turísticos: ");
+    scanf("%d", &Carta2Pturisticos);
 
+    // Exibição dos Dados das Cartas:
+    printf("Dados da Carta 1:\n");
+    printf("Estado: %c\n", Carta1Estado);
+    printf("Codigo: %s\n",Carta1Codigo);
+    printf("Cidade: %s\n",Carta1NomeCidade);
+    printf("População: %d\n",Carta1Populacao);
+    printf("Área: %f\n", Carta1Area);
+    printf("PIP: %f\n",Carta1PIB);
+    printf("Quantidade de Pontos Turísticos: %d\n",Carta1Pturisticos);
+
+    printf("Dados da Carta 2:\n");
+    printf("Estado: %c\n", Carta2Estado);
+    printf("Codigo: %s\n",Carta2Codigo);
+    printf("Cidade: %s\n",Carta2NomeCidade);
+    printf("População: %d\n",Carta2Populacao);
+    printf("Área: %f\n", Carta2Area);
+    printf("PIP: %f\n",Carta2PIB);
+    printf("Quantidade de Pontos Turísticos: %d\n",Carta2Pturisticos);
     return 0;
 }
